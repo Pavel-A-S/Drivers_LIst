@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col s12 m12 l12">
+    <h3 class="header center grey-text">Drivers list</h1>
+  </div>
+  <div class="col s12 m12 l12">
+    <table class="responsive-table striped">
+      <thead class="black-text">
+        <tr>
+          <th data-field="name">Name</th>
+          <th data-field="last_connected_at">Last connected at</th>
+          <th data-field="route 1">Route 1</th>
+          <th data-field="route 2">Route 2</th>
+          <th data-field="coordinates">Coordinates</th>
+          <th data-field="colli_in_truck">Colli in truck</th>
+          <th data-field="Turnover">Turnover</th>
+          <th data-field="Messages">Messages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @drivers.each do |d| %>
+          <tr>
+            <td><%= d.name %></td>
+            <td><%= d.last_connected_at.strftime("%I:%M%p")  %></td>
+            <td><%= d.route.label %></td>
+            <td><%= d.route.truck.label %></td>
+            <td><%= d.route.truck.last_lat_lng %></td>
+            <td><%= d.route.truck.colli_in_truck %></td>
+            <td><%= d.route.truck.turnover %></td>
+            <td><%= d.recipients.count %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

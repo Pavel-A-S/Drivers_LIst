@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  label: MyString
+  colli_in_truck: 1
+  turnover: 9.99
+  last_lat_lng: 9.99
+
+two:
+  label: MyString
+  colli_in_truck: 1
+  turnover: 9.99
+  last_lat_lng: 9.99

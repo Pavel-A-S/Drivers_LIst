@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message_id: 1
+  recipientable_id: 1
+  recipientable_type: MyString
+  state: MyString
+
+two:
+  message_id: 1
+  recipientable_id: 1
+  recipientable_type: MyString
+  state: MyString
